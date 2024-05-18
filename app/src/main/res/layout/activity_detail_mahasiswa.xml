@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailMahasiswaActivity"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_circle_left_24"
+        android:onClick="onBackPressed"
+        android:id="@+id/btn_back"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Mahasiswa"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_below="@+id/btn_back"
+        android:textSize="18dp"
+        android:id="@+id/tv_nama"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nim Mahasiswa"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_below="@id/tv_nama"
+        android:textSize="16dp"
+        android:id="@+id/tv_nim"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Judul Tugas Akhir"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_below="@id/tv_nim"
+        android:textSize="16dp"
+        android:id="@+id/tv_judulta"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kategori"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_below="@id/tv_judulta"
+        android:textSize="16dp"
+        android:id="@+id/tv_kategori"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pembimbing 1"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_below="@id/tv_kategori"
+        android:textSize="16dp"
+        android:id="@+id/tv_pembimbing_1"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pembimbing 2"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_below="@id/tv_pembimbing_1"
+        android:textSize="16dp"
+        android:id="@+id/tv_pembimbing_2"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Penguji 1"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_below="@id/tv_pembimbing_2"
+        android:textSize="16dp"
+        android:id="@+id/tv_penguji_1"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Penguji 2"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_below="@+id/tv_penguji_1"
+        android:textSize="16dp"
+        android:id="@+id/tv_penguji_2"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_below="@id/tv_penguji_2"
+        android:textSize="16dp"
+        android:id="@+id/tv_status"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>
