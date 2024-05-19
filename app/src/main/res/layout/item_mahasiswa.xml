@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="5dp">
+    android:layout_marginTop="5dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -19,12 +19,21 @@
             android:fontFamily="@font/poppinsbold"/>
 
         <TextView
+            android:id="@+id/tv_nim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIM"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:fontFamily="@font/poppinsbold"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"/>
+
+        <TextView
             android:id="@+id/tv_judul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Judul"
             android:fontFamily="@font/poppinsmedium"
-            app:layout_constraintTop_toBottomOf="@id/tv_name"/>
+            app:layout_constraintTop_toBottomOf="@id/tv_nim"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

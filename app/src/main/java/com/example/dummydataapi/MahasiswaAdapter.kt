@@ -19,6 +19,7 @@ class MahasiswaAdapter(val listMahasiswa: List<Mahasiswa.Data>): RecyclerView.Ad
         val mahasiswa = listMahasiswa[position]
         holder.binding.tvName.text = mahasiswa.nama
         holder.binding.tvJudul.text = mahasiswa.judul_ta
+        holder.binding.tvNim.text = mahasiswa.nim
 
         holder.itemView.setOnClickListener{
 
