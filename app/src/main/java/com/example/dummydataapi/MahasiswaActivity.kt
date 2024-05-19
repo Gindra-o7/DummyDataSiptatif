@@ -10,6 +10,7 @@ import com.example.dummydataapi.databinding.ActivityMahasiswaBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import android.view.MotionEvent
 
 class MahasiswaActivity : AppCompatActivity() {
 
@@ -34,6 +35,16 @@ class MahasiswaActivity : AppCompatActivity() {
             }
 
         })
+
+        binding.root.setOnTouchListener { v, event ->
+            if (event.action == MotionEvent.ACTION_DOWN) {
+                if (binding.searchView.hasFocus()) {
+                    binding.searchView.clearFocus()
+                    v.performClick()
+                }
+            }
+            false
+        }
 
         fetchAllMahasiswa()
     }
