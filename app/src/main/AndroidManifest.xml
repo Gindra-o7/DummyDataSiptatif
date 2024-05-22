@@ -16,9 +16,6 @@
         android:theme="@style/Theme.DummyDataApi"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
             android:name=".DetailMahasiswaActivity"
             android:exported="false" />
         <activity

@@ -122,5 +122,4 @@ class MahasiswaActivity : AppCompatActivity() {
             false -> binding.progressBar.visibility = View.GONE
         }
     }
-
 }
